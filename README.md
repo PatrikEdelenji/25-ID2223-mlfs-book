@@ -1,3 +1,10 @@
+# Lab Description
+Actions feature two main parts: running a daily air quality measurement and building pages and deployment. They are named accordingly under the Actions tab and you can find the predicted vs actual ar quality measurements on this page: https://patrikedelenji.github.io/25-ID2223-mlfs-book/air-quality/
+
+The predicted vs actual air quality is roughly accurate, and leaves some room for improvement. 
+
+Considering all of the work done here has been given via instructions, the description given here is concise.
+
 # mlfs-book
 O'Reilly book - Building Machine Learning Systems with a feature store: batch, real-time, and LLMs
 

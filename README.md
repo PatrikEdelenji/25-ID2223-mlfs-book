@@ -1,43 +1,34 @@
-# mlfs-book
-O'Reilly book - Building Machine Learning Systems with a feature store: batch, real-time, and LLMs
+## Predict Air Quality
+
+This project builds an Air Quality Forecasting Service for an Air Quality sensor available at https://waqi.info/.
 
 
-## ML System Examples
+The output is a forecast for air quality, like this one:
+
+![Air quality Prediction](https://featurestorebook.github.io/mlfs-book/air-quality/assets/img/pm25_forecast.png)
 
 
-[Dashboards for Example ML Systems](https://featurestorebook.github.io/mlfs-book/)
+## Personalized Air Quality Predictions with a LLM
+
+This air quality forecasting service has been augmented with LLM capabilities. You can ask it both future (forecasting) and historical questions about air quality at your location via a microphone or text input dialog.
+
+We augment the prompt with:
+ * your location,
+ * today’s date,
+ * predicted air quality (from a ML model),
+ * historical air quality (from the feature store),
+ * are you in a sensitive group (coming soon).
 
 
-# Run Air Quality Tutorial
-
-See [tutorial instructions here](https://docs.google.com/document/d/1YXfM1_rpo1-jM-lYyb1HpbV9EJPN6i1u6h2rhdPduNE/edit?usp=sharing)
-    
-# Create a conda or virtual environment for your project before you install the requirements
-    pip install -r requirements.txt
+![Personalized Air Quality with LLMs Architecture](personalized-air-quality-with-llms.png)
 
 
-##  Run pipelines with make commands
+## Application Architecture
 
-    make aq-backfill
-    make aq-features
-    make aq-train
-    make aq-inference
-    make aq-clean
-
-or 
-    make aq-all
+![Application Architecture Air Quality with LLMs Architecture](app-air-quality-with-llms.png)
 
 
+## Tutorial Instructions
 
-## Feldera
+You can find [instructions for running this tutorial in this Google Doc](https://docs.google.com/document/d/1YXfM1_rpo1-jM-lYyb1HpbV9EJPN6i1u6h2rhdPduNE/edit?usp=sharing).
 
-
-mkdir -p /tmp/c.app.hopsworks.ai
-ln -s  /tmp/c.app.hopsworks.ai ~/hopsworks
-docker run -p 8080:8080 \
-  -v ~/hopsworks:/tmp/c.app.hopsworks.ai \
-  --tty --rm -it ghcr.io/feldera/pipeline-manager:latest
-
-
-## Introduction to ML
-I wrote a brief introduction to machine learning [here](./introduction_to_supervised_ml.pdf)

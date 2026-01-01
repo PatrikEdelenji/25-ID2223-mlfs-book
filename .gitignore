@@ -1,7 +1,7 @@
 # api keys
 data/hopsworks-api-key.txt
 data/aqi-api-key.txt
-
+data/*
 .env
 .venv
 .claude

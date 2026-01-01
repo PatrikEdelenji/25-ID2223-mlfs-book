@@ -21,11 +21,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
-      - name: install python packages
+      
+      - name: install uv (fast Python package installer)
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install --upgrade uv
+      
+      - name: install python packages from pyproject.toml
+        run: |
+          uv pip install --system --all-extras --requirement pyproject.toml
 
       - name: execute python workflows from bash script
         env:
@@ -34,23 +37,17 @@ jobs:
         run: |
           ipython notebooks/fingrid/2_daily_feature_pipeline.ipynb
           ipython notebooks/fingrid/4_inference_pipeline.ipynb
+          
       - name: github pages publish
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Fingrid Energy Dashboard published"
           commit_options: '--no-verify --signoff'
-
           file_pattern: 'docs/fingrid/assets/img/* docs/_includes/*'
-
           repository: .
-
           status_options: '--untracked-files=no'
-
           skip_dirty_check: true
-
           skip_fetch: true
-
           skip_checkout: true
-
           push_options: '--force'
 

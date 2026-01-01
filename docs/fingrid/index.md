@@ -4,7 +4,13 @@
 
 {% include fingrid.html %}
 
+## 7-Day Forecast
+
 ![Forecast](./assets/img/energy_forecast.png)
+
+## Hindcast - Predictions vs Actual
+
+![Hindcast](./assets/img/energy_hindcast.png)
 
 This dashboard displays the 7-day forecast for Finland's electricity consumption using:
 - **Fingrid API**: Real-time energy consumption data (3-minute intervals)

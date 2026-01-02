@@ -8,6 +8,10 @@
 
 ![Forecast](./assets/img/energy_forecast.png)
 
+## Model Performance on Test Data
+
+![Training Results](./assets/img/energy_consumption_predictions.png)
+
 ## Hindcast - Predictions vs Actual
 
 ![Hindcast](./assets/img/energy_hindcast.png)

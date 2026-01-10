@@ -12,9 +12,27 @@
 
 ![Training Results](./assets/img/energy_consumption_predictions.png)
 
-## Hindcast - Predictions vs Actual
+## Hindcast - All 4 Models Predictions vs Actual
 
-![Hindcast](./assets/img/energy_hindcast.png)
+Compares 1-day-ahead predictions from all 4 models (baseline and lag-based variants) against actual consumption values over historical periods. This validates each model's ability to predict consumption patterns and shows how different lag features impact prediction accuracy over time.
+
+![Hindcast All Models](./assets/img/energy_hindcast_all_models.png)
+
+## Model Analysis - Baseline Model
+
+### Feature Importance
+![Feature Importance - Baseline](./assets/img/feature_importance.png)
+
+### Feature Correlation
+![Feature Correlation - Baseline](./assets/img/feature_correlation.png)
+
+## Model Analysis - Lag Models
+
+### Feature Importance Comparison
+![Feature Importance - Lag Models](./assets/img/feature_importance_lag_models.png)
+
+### Feature Correlation Comparison
+![Feature Correlation - Lag Models](./assets/img/feature_correlation_lag_models.png)
 
 This dashboard displays the 7-day forecast for Finland's electricity consumption using:
 - **Fingrid API**: Real-time energy consumption data (3-minute intervals)

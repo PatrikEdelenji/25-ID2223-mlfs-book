@@ -12,6 +12,8 @@
 
 ![Training Results](./assets/img/energy_consumption_predictions.png)
 
+![Training Results with lag](./assets/img/energy_consumption_predictions_with_lags.png)
+
 ## Hindcast - All 4 Models Predictions vs Actual
 
 Compares 1-day-ahead predictions from all 4 models (baseline and lag-based variants) against actual consumption values over historical periods. This validates each model's ability to predict consumption patterns and shows how different lag features impact prediction accuracy over time.

@@ -41,3 +41,5 @@ The models use temporal features (year, month, day, hour, day-of-week, weekend f
 ## Deployment
 
 Predictions and monitoring data are stored in Hopsworks Feature Store for tracking model performance over time. Visualization assets (forecast and hindcast charts) are uploaded to Hopsworks for monitoring.
+
+GitHub page: https://patrikedelenji.github.io/25-ID2223-mlfs-book/fingrid/

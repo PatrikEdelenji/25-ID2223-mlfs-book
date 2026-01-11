@@ -6,7 +6,7 @@
 
 ## 7-Day Forecast
 
-![Forecast](./assets/img/energy_forecast.png)
+![Forecast](./assets/img/energy_forecast_all_models.png)
 
 ## Model Performance on Test Data
 
